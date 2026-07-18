@@ -1,5 +1,5 @@
 packages:
-  respeaker-satellite: github://formatBCE/Respeaker-Lite-ESPHome-integration/config/common/respeaker-satellite-base.yaml@main
+  respeaker-satellite: common/respeaker-satellite-base.yaml
 
 esphome:
   name: respeaker-satellite
