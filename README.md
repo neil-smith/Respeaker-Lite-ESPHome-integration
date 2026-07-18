@@ -41,5 +41,8 @@ Since version 2025.2.2, the firmware includes corresponding DFU firmware for Res
 ### Casing
 I made some casing to improve family approval factor. [Check it out.](casing/Casing.md)
 
+### Using your own custom wake word
+If you're hosting your own `micro_wake_word` model manifest and it won't validate or show up as selectable, see [common gotchas here](readme/custom_wake_word_troubleshooting.md).
+
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/formatbce)
