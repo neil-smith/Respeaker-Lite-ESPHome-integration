@@ -1344,9 +1344,9 @@ external_components:
     refresh: 0s
   - source:
       type: git
-      url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration
+      url: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration.git
       ref: main
-    components: 
+    components:
       - respeaker_lite
     refresh: 0s
 
