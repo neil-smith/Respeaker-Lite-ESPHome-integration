@@ -1366,8 +1366,6 @@ micro_wake_word:
     - model: https://github.com/OHF-Voice/micro-wake-word/releases/download/okay_nabu_20241226.3/okay_nabu.json
       # probability_cutoff: 0.8
       id: okay_nabu
-    - model: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration/raw/branch/main/microwakeword/models/v2/hey_oh_mayga.json
-      id: hey_oh_mayga
     - model: https://raw.githubusercontent.com/formatBCE/Respeaker-Lite-ESPHome-integration/refs/heads/main/microwakeword/models/v2/kenobi.json
       id: kenobi
     - model: hey_jarvis
