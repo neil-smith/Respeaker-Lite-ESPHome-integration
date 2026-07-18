@@ -1365,6 +1365,7 @@ micro_wake_word:
   models:
     - model: github://esphome/micro-wake-word-models/models/v2/hey_jarvis.json
       id: hey_jarvis
+      internal: false
     - model: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration/raw/branch/main/microwakeword/models/v2/hey_oh_mayga.json
       id: hey_oh_mayga
       internal: false
