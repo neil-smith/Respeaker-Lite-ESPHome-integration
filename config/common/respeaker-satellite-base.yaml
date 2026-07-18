@@ -1365,6 +1365,8 @@ micro_wake_word:
   models:
     - model: hey_jarvis
       id: hey_jarvis
+    - model: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration/microwakeword/models/v2/hey_oh_mayga.json
+      id: hey_oh_mayga
       internal: false
     - model: https://github.com/OHF-Voice/micro-wake-word/releases/download/stop/stop.json
       id: stop
@@ -1437,10 +1439,13 @@ select:
       lambda: |-
         if (x == "Slightly sensitive") {
           id(hey_jarvis).set_probability_cutoff(247);   // 0.97 -> 0.563 FAPH on DipCo (Manifest's default)
+          id(hey_oh_mayga).set_probability_cutoff(247);   // 0.97 -> 0.563 FAPH on DipCo (Manifest's default)
         } else if (x == "Moderately sensitive") {
           id(hey_jarvis).set_probability_cutoff(235);   // 0.92 -> 0.939 FAPH on DipCo
+          id(hey_oh_mayga).set_probability_cutoff(235);   // 0.92 -> 0.939 FAPH on DipCo
         } else if (x == "Very sensitive") {
           id(hey_jarvis).set_probability_cutoff(212);   // 0.83 -> 1.502 FAPH on DipCo
+          id(hey_oh_mayga).set_probability_cutoff(212);   // 0.83 -> 1.502 FAPH on DipCo
         }
   - platform: logger
     id: logger_select
