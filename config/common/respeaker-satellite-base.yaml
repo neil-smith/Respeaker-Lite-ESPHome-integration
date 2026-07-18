@@ -1365,7 +1365,7 @@ micro_wake_word:
   models:
     - model: hey_jarvis
       id: hey_jarvis
-    - model: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration/microwakeword/models/v2/hey_oh_mayga.json
+    - model: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration/raw/branch/main/microwakeword/models/v2/hey_oh_mayga.json
       id: hey_oh_mayga
       internal: false
     - model: https://github.com/OHF-Voice/micro-wake-word/releases/download/stop/stop.json
