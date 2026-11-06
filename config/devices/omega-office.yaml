@@ -1,0 +1,23 @@
+packages:
+  respeaker-satellite:
+    url: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration.git
+    ref: main
+    files:
+      - config/common/respeaker-satellite-base.yaml
+    refresh: 1min
+
+esphome:
+  name: omega-voice-office
+  friendly_name: Omega Office (Voice)
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+  encryption:
+    key: !secret api-key_omega-voice-office
+
+ota:
+  - platform: esphome
+    password: !secret ota_password
