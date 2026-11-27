@@ -282,7 +282,8 @@ bool RespeakerLite::dfu_get_version_() {
     return false;
   }
 
-  std::string version = str_sprintf("%u.%u.%u", version_resp[1], version_resp[2], version_resp[3]);
+  std::string version = std::to_string(version_resp[1]) + "." + std::to_string(version_resp[2]) + "." +
+                        std::to_string(version_resp[3]);
   ESP_LOGI(TAG, "DFU version: %s", version.c_str());
   this->firmware_version_major_ = version_resp[1];
   this->firmware_version_minor_ = version_resp[2];
