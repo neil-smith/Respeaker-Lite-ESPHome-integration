@@ -1352,6 +1352,12 @@ external_components:
       path: components
     components:
       - i2s_audio
+    refresh: 0s
+  - source:
+      type: git
+      url: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration.git
+      ref: main
+    components:
       - respeaker_lite
     refresh: 0s
 
