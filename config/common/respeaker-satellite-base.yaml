@@ -1347,16 +1347,10 @@ respeaker_lite:
 external_components:
   - source:
       type: git
-      url: https://github.com/formatBCE/esphome
-      ref: respeaker_microphone
+      url: https://gitea.internal.omegaproject.ai/neil-smith/Respeaker-Lite-ESPHome-integration.git
+      ref: main
     components:
       - i2s_audio
-    refresh: 0s
-  - source:
-      type: git
-      url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration
-      ref: main
-    components: 
       - respeaker_lite
     refresh: 0s
 
